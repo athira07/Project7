@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id=mylist></div>
+    
+    <script>
+        
+        let ary = ["itm1","itm2","itm3","itm4"]
+        //for(x of ary){
+           // let li=document.createElement("li")
+            //li.innerText=x
+            //document.getElementById("mylist").appendChild(li)
+        
+        let s=""
+        for(x of ary){
+            s+=`<li>${x}</li>`
+        }
+        document.getElementById("mylist").innerHTML=s
+
+        console.log(ary)
+    </script>
+
+</body>
+
+</html>

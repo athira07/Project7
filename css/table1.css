@@ -1,0 +1,15 @@
+.tbl{
+    border-collapse: collapse;
+}
+.tHeader{
+    background-color: burlywood;
+}
+.tHeader:hover{
+    background-color: cadetblue;
+}
+.rowcls:hover:nth-child(even){
+    background-color: chocolate;
+}
+.rowcls:hover:nth-child(odd){
+    background-color: cornflowerblue;
+}

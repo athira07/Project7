@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img:hover {
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+        }
+        img:hover{
+            -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+        }
+        </style>
+</head>
+<body>
+    <script src="java.js/fliping.js"></script>
+    <img src="nature.jpg" alt="nature" height="100px" width="200px">
+    <img src="scrn.png" alt="scrsht" height="100px" width="200px">
+    <script>
+        
+function myFunction() {
+  var x = document.getElementById('nature.jpg');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+document.getElementById("nature.jpg").style.display = "none";
+</script>
+        
+</body>
+</html>

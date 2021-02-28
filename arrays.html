@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names=["anna","rose","manu","ammu","ram","dona"]
+        console.table(names.slice(2,5))
+        console.table(names)
+        for(element of names){
+            console.log(element)
+        }
+        console.log("*********************")
+        for(index in names){
+            console.log(index)
+            console.log(names[index])
+        }
+        console.log("******using for Each Function*******")
+        names.forEach((names)=>{
+               console.log(names)
+        })
+        newary=names.map((names)=>{
+               return names.concat("*")
+        })
+        console.log(newary)
+        let newary2=names.filter((names)=>{
+            if(names.startsWith("r")){
+                return names
+            }
+        })
+        console.log(newary2)
+        console.log("******finding squr of numbers*******")
+        let num_ary=[9,11,10,4,7,8]
+         let num_ary1=num_ary.map((x)=>{
+         return x**2
+
+         })
+         console.log(num_ary1)
+         let result=num_ary.reduce((x,y)=>{
+                   //console.log("x",x)
+                   //console.log("y",y)
+                   return x+y
+         })
+         console.log(result)
+         let result1=num_ary.reduceRight((x,y)=>{
+             return x+y
+         })
+         console.log(result1)
+         console.log(num_ary)
+         //num_ary.sort()
+         console.log("array",num_ary)
+         num_ary.reverse()
+         console.log(num_ary)
+</script>
+</body>
+</html>
